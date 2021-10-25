@@ -1,0 +1,81 @@
+            body {
+                background: rgb(38, 0, 130);
+                background: linear-gradient(90deg, rgba(38, 0, 130, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(233, 0, 255, 1) 100%);
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            a {
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+            }
+            
+            a:hover {
+                color: pink;
+                font-family: 'Nunito', sans-serif;
+                font-size: larger;
+                animation: animate 8s linear infinite;
+            }
+            
+            h1 {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 600;
+            }
+            
+            .neko {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                font-size: 24px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: 'Nunito', sans-serif;
+                box-sizing: border-box;
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background-size: 400%;
+                border-radius: 30px;
+            }
+            
+            .neko:hover {
+                animation: animate 8s linear infinite;
+            }
+            
+            @keyframes animate {
+                0% {
+                    background-position: 0%;
+                }
+                100% {
+                    background-position: 400%;
+                }
+            }
+            
+            .neko:before {
+                content: '';
+                position: relative;
+                top: -5px;
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                z-index: -1;
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background-size: 400%;
+                border-radius: 30px;
+                filter: blur(20px);
+            }
+            
+            .neko:hover:before {
+                filter: blur(20px);
+                opacity: 1;
+                animation: animate 8s linear infinite;
+            }
+            
+            .kaanepilt {
+                position: relative;
+                border-radius: 75px;
+            }
