@@ -79,3 +79,19 @@
                 position: relative;
                 border-radius: 75px;
             }
+            
+            .editing {
+                color: pink;
+                background-color: black;
+                margin-left: 46%;
+                margin-top: 3%;
+                font-family: 'Nunito', sans-serif;
+            }
+            
+            .input {
+                color: pink;
+                background-color: black;
+                margin-top: 20%;
+                margin-left: 40%;
+                font-family: 'Nunito', sans-serif;
+            }
