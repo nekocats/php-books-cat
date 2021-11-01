@@ -33,7 +33,13 @@ $book = $stmt->fetch();
         <a href="edit.php?id=<?=$bookId?>">
             Muuda
         </a>
-        <a href="delete.php?id=<?=$bookId?>">Kustuta</a>
+        
+    </div>
+
+    <div class="nekochan">
+        <div class="del">
+            <a href="delete.php?id=<?=$bookId?>">Kustuta</a>
+        </div>
     </div>
    
     </body>

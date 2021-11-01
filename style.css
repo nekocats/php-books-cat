@@ -1,20 +1,37 @@
             body {
-                background: rgb(38, 0, 130);
-                background: linear-gradient(90deg, rgba(38, 0, 130, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(233, 0, 255, 1) 100%);
+                background: linear-gradient(90deg, rgb(62, 0, 87) 0%, rgb(1, 2, 82) 0%, rgb(121, 0, 121) 100%);
+                background-size: 150% 150%;
                 color: white;
                 font-family: 'Montserrat', sans-serif;
+                margin-top: 1%;
+                margin-left: 2%;
+                animation: gradient 15s ease infinite;
+            }
+            
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
             
             a {
                 font-family: 'Montserrat', sans-serif;
                 color: white;
+                text-decoration: none;
             }
             
             a:hover {
-                color: pink;
+                color: rgb(255, 255, 255);
                 font-family: 'Nunito', sans-serif;
                 font-size: larger;
                 animation: animate 8s linear infinite;
+                text-decoration: none;
             }
             
             h1 {
@@ -37,7 +54,7 @@
                 text-decoration: none;
                 font-family: 'Nunito', sans-serif;
                 box-sizing: border-box;
-                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background: linear-gradient(90deg, #029c28, #00a164, #009db9, #029c28);
                 background-size: 400%;
                 border-radius: 30px;
             }
@@ -63,7 +80,7 @@
                 right: -5px;
                 bottom: -5px;
                 z-index: -1;
-                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background: linear-gradient(90deg, #029c28, #00a164, #009db9, #029c28);
                 background-size: 400%;
                 border-radius: 30px;
                 filter: blur(20px);
@@ -81,8 +98,8 @@
             }
             
             .editing {
-                color: pink;
-                background-color: black;
+                color: rgb(255, 255, 255);
+                background: linear-gradient(90deg, #004e07, #005e46, #00441c, #00463c);
                 margin-left: 46%;
                 margin-top: 3%;
                 font-family: 'Nunito', sans-serif;
@@ -94,4 +111,49 @@
                 margin-top: 20%;
                 margin-left: 40%;
                 font-family: 'Nunito', sans-serif;
+            }
+            
+            .nekochan {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                margin-top: 2%;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                font-size: 24px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: 'Nunito', sans-serif;
+                box-sizing: border-box;
+                background: linear-gradient(90deg, #f4034b, #ff3bb4, #f441e5, #f4034b);
+                background-size: 400%;
+                border-radius: 30px;
+            }
+            
+            .nekochan:hover {
+                animation: animate 8s linear infinite;
+            }
+            
+            .nekochan:before {
+                content: '';
+                position: relative;
+                top: -5px;
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                z-index: -1;
+                background: linear-gradient(90deg, #f40353, #f441e5, #ff3bb4, #f4034b);
+                background-size: 400%;
+                border-radius: 30px;
+                filter: blur(20px);
+            }
+            
+            .nekochan:hover:before {
+                filter: blur(20px);
+                opacity: 1;
+                animation: animate 8s linear infinite;
             }
