@@ -6,6 +6,7 @@
                 margin-top: 1%;
                 margin-left: 2%;
                 animation: gradient 15s ease infinite;
+                font-size: 24px;
             }
             
             @keyframes gradient {
@@ -47,6 +48,7 @@
                 width: 200px;
                 height: 60px;
                 text-align: center;
+                margin: 1%;
                 line-height: 60px;
                 color: white;
                 font-size: 24px;

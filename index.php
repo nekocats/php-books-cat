@@ -11,6 +11,16 @@
     <h1>
         Raamatud:
     </h1>
+    <nav>
+    <div class="neko">
+        <a href="add_book.php">Lisa Raamat</a>
+    </div>
+    
+    <div class="neko">
+        <a href="add_author.php">Lisa Autor</a>
+    </div>
+    </nav>
+    
 </body>
 
 <?php

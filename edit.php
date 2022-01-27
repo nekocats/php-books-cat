@@ -36,7 +36,6 @@ $book = $stmt->fetch();
     <input class="editing" type="submit" name="save" value="Salvesta">
 </form>
 
-    
 </body>
 </html>
 
